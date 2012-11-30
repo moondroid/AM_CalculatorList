@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <fragment
+            android:id="@+id/inputFragment1"
+            android:name="eu.areamobile_android_apps.calculatorlist.InputFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/input_layout" /><fragment
+            android:id="@+id/operationFragment"
+            android:name="eu.areamobile_android_apps.calculatorlist.OperationFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            tools:layout="@layout/operation_layout" />
+
+        <fragment
+            android:id="@+id/inputFragment2"
+            android:name="eu.areamobile_android_apps.calculatorlist.InputFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/input_layout" />
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/calculateFragment"
+        android:name="eu.areamobile_android_apps.calculatorlist.CalculateFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        tools:layout="@layout/calculate_layout" />
+
+</RelativeLayout>
